@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Interactive professional CV dashboard of Manoj Kumar Vishwakarma - Operations, MIS, ERP, SAP, RTO, Insurance, Store, Mechanical, Civil, Finance and Infrastructure Projects.">
+  <meta name="theme-color" content="#071b33">
+  <title>Manoj Kumar Vishwakarma | Interactive Operations CV</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+  <script defer src="js/app.js"></script>
+</head>
+<body>
+  <div class="page-loader" id="pageLoader"><div class="loader-ring"></div><p>Loading professional dashboard...</p></div>
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#home"><span>MKV</span> Professional Dashboard</a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">☰</button>
+    <nav id="navMenu">
+      <a href="#home">Home</a><a href="#expertise">Expertise</a><a href="#projects">Projects</a><a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </nav>
+    <div class="top-actions"><button class="btn ghost" data-action="print">Print</button><button class="btn gold" data-action="pdf">Download PDF</button></div>
+  </header>
+
+  <main id="resume">
+    <section class="hero" id="home">
+      <div class="hero-particles" aria-hidden="true"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">Operations • MIS • ERP • SAP • Infrastructure</p>
+        <h1>MANOJ KUMAR <span>VISHWAKARMA</span></h1>
+        <h2>Assistant Manager – Operations, Project MIS, Plant & Machinery, Cost Control and Digital Automation</h2>
+        <p class="hero-copy">15+ years of experience in multi-project infrastructure operations, RTO and insurance coordination, mechanical maintenance, store and spare control, ERP/SAP reporting, finance MIS, cost control, project profit and loss, and self-developed software automation.</p>
+        <div class="hero-tags"><span>15+ Years</span><span>Multi-Site MIS</span><span>SAP S/4HANA PM & ETM</span><span>Automation Developer</span><span>Road • Railway • Building • EPC</span></div>
+        <div class="hero-actions"><a class="btn gold" href="#expertise">Explore Expertise</a><button class="btn glass" data-action="pdf">Download CV</button></div>
+      </div>
+      <div class="hero-visual reveal delay-1">
+        <div class="profile-orbit"><div class="profile-core">MKV</div><span class="orbit-item o1">ERP</span><span class="orbit-item o2">MIS</span><span class="orbit-item o3">SAP</span><span class="orbit-item o4">RTO</span><span class="orbit-item o5">P&M</span></div>
+      </div>
+    </section>
+
+    <section class="contact-strip" id="contact">
+      <a href="tel:+917007700205">📞 7007700205</a><a href="tel:+918874373026">📞 8874373026</a><a href="mailto:ermanoj7860@gmail.com">✉ ermanoj7860@gmail.com</a><span>📍 Vishrantwadi, Pune, Maharashtra – 411015</span>
+    </section>
+
+    <section class="section stats-section">
+      <div class="stats-grid">
+        <article class="stat reveal"><strong data-counter="15">0</strong><span>Years Experience</span></article>
+        <article class="stat reveal delay-1"><strong data-counter="8">0</strong><span>Core Departments</span></article>
+        <article class="stat reveal delay-2"><strong data-counter="5">0</strong><span>Project Sectors</span></article>
+        <article class="stat reveal delay-3"><strong data-counter="35">0</strong><span>% Breakdown Reduction</span></article>
+        <article class="stat reveal delay-4"><strong data-counter="95">0</strong><span>% Fleet Uptime</span></article>
+      </div>
+    </section>
+
+    <section class="section intro-grid">
+      <div class="section-title reveal"><p>Professional Profile</p><h2>Operations leader with digital control expertise</h2></div>
+      <div class="intro-card reveal delay-1"><p>Result-oriented professional experienced in ERP operations, SAP S/4HANA PM and ETM, Power BI dashboards, multi-site MIS, machinery and maintenance cost control, fuel monitoring, vendor billing, insurance claims, RTO documentation, store automation and project coordination.</p><p>Strong in transforming manual site processes into centralized digital workflows, validating multi-project data, producing management dashboards, controlling project budgets and supporting decision-making through reliable reports.</p></div>
+    </section>
+
+    <section class="section" id="expertise">
+      <div class="section-title reveal"><p>Click any card</p><h2>Professional Expertise Dashboard</h2></div>
+      <div class="expertise-grid" id="expertiseGrid"></div>
+    </section>
+
+    <section class="section dark-section" id="projects">
+      <div class="section-title light reveal"><p>Infrastructure portfolio</p><h2>Multiple project operations and automation</h2></div>
+      <div class="project-grid" id="projectGrid"></div>
+    </section>
+
+    <section class="section">
+      <div class="section-title reveal"><p>Management Controls</p><h2>Cost, budget, P&amp;L and performance monitoring</h2></div>
+      <div class="control-grid">
+        <article class="control-card reveal"><h3>Monthly Budget Review</h3><div class="meter"><span style="--value:86%"></span></div><p>Budget, actual, commitment, forecast, variance, responsible person and corrective action.</p></article>
+        <article class="control-card reveal delay-1"><h3>Yearly Cost Planning</h3><div class="meter"><span style="--value:78%"></span></div><p>Annual OPEX/CAPEX, project-wise allocation, quarterly revisions and rolling forecast.</p></article>
+        <article class="control-card reveal delay-2"><h3>Project Profit &amp; Loss</h3><div class="meter"><span style="--value:91%"></span></div><p>Revenue, billing, direct cost, overhead, margin, cash flow and forecast-at-completion.</p></article>
+        <article class="control-card reveal delay-3"><h3>Equipment Cost Control</h3><div class="meter"><span style="--value:88%"></span></div><p>Fuel, repairs, spares, hire, utilization, idle cost and cost per hour/km/MT.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="experience">
+      <div class="section-title reveal"><p>Career Journey</p><h2>Professional Experience</h2></div>
+      <div class="timeline">
+        <article class="timeline-card reveal"><span>Oct 2025 – Present</span><h3>Shri Swami Samarth Engineers Ltd</h3><h4>Assistant Manager | Head Office, Pune</h4><ul><li>Manage ERP operations, purchase/civil MIS, machinery data, GRN/GIN and management reporting.</li><li>Develop Power BI and interactive dashboards for MD/GM review.</li><li>Coordinate mechanical maintenance, project reporting, cost controls and digital workflows.</li></ul></article>
+        <article class="timeline-card reveal"><span>Jun 2023 – Oct 2025</span><h3>ISC Project Pvt. Ltd</h3><h4>Senior Engineer | Head Office, Pune</h4><ul><li>Led ERP and SAP S/4HANA PM/ETM implementation across project sites.</li><li>Managed hire machinery, fuel automation, budgets, insurance claims and project MIS.</li><li>Supported approximately ₹2,000 Cr project operations through reporting and cost controls.</li></ul></article>
+        <article class="timeline-card reveal"><span>Mar 2021 – Jun 2023</span><h3>Unique Infra Engineering India Pvt. Ltd</h3><h4>Consultant / Head Office Operations</h4><ul><li>Prepared utilization, productivity and management dashboards.</li><li>Handled RTO, Vahan 4.0, hire agreements, breakdown inspections and project coordination.</li><li>Supported road, railway, building, EPC and metro reporting.</li></ul></article>
+        <article class="timeline-card reveal"><span>Aug 2016 – Mar 2021</span><h3>Dee Vee Projects Ltd</h3><h4>Head Office Operations</h4><ul><li>Controlled annual/monthly budgets, MTBF/MTTR, insurance portfolios and RTO processes.</li><li>Coordinated project managers, site mechanical teams and procurement.</li></ul></article>
+        <article class="timeline-card reveal"><span>Dec 2014 – Mar 2016</span><h3>H.G. Infra Engineering Pvt. Ltd</h3><h4>Project Monitoring / Site Supervision / Documentation</h4><ul><li>Prepared weekly/monthly reports, cost and profitability analysis and project documentation.</li></ul></article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <article class="info-panel reveal"><h2>Software &amp; Tools</h2><div class="chips"><span>SAP S/4HANA</span><span>SAP PM</span><span>SAP ETM</span><span>ERP</span><span>Power BI</span><span>Advanced Excel</span><span>Power Query</span><span>Google Sheets</span><span>Apps Script</span><span>HTML/CSS/JavaScript</span><span>Excel VBA</span><span>Looker Studio</span><span>REST API</span><span>Webhooks</span></div></article>
+      <article class="info-panel reveal delay-1"><h2>Education</h2><ul><li>Diploma in Mechanical Engineering – Shobhit Institute of Engineering &amp; Technology, 2013</li><li>Advanced Diploma in Computer Application – Allahabad University, 2009</li><li>Intermediate – U.P. Board, 2008</li><li>High School – U.P. Board, 2006</li></ul></article>
+    </section>
+  </main>
+
+  <footer><strong>Manoj Kumar Vishwakarma</strong><p>Operations • MIS • ERP • SAP • Infrastructure Project Controls</p></footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+  <div class="modal" id="detailModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-backdrop" data-action="close-modal"></div>
+    <div class="modal-card"><header><div><small>Professional Expertise</small><h2 id="modalTitle"></h2></div><button data-action="close-modal" aria-label="Close">×</button></header><div class="modal-content" id="modalBody"></div></div>
+  </div>
+</body>
+</html>
