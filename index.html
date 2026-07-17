@@ -9,9 +9,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="style.css">
   <script defer src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-  <script defer src="js/app.js"></script>
+  <script defer src="app.js"></script>
 </head>
 <body>
   <div class="page-loader" id="pageLoader"><div class="loader-ring"></div><p>Loading professional dashboard...</p></div>
@@ -30,15 +30,25 @@
     <section class="hero" id="home">
       <div class="hero-particles" aria-hidden="true"></div>
       <div class="hero-content reveal">
-        <p class="eyebrow">Operations • MIS • ERP • SAP • Infrastructure</p>
+        <p class="eyebrow">RTO • INSURANCE • PURCHASE • BREAKDOWN • MECHANICAL • CIVIL</p>
         <h1>MANOJ KUMAR <span>VISHWAKARMA</span></h1>
-        <h2>Assistant Manager – Operations, Project MIS, Plant & Machinery, Cost Control and Digital Automation</h2>
-        <p class="hero-copy">15+ years of experience in multi-project infrastructure operations, RTO and insurance coordination, mechanical maintenance, store and spare control, ERP/SAP reporting, finance MIS, cost control, project profit and loss, and self-developed software automation.</p>
-        <div class="hero-tags"><span>15+ Years</span><span>Multi-Site MIS</span><span>SAP S/4HANA PM & ETM</span><span>Automation Developer</span><span>Road • Railway • Building • EPC</span></div>
+        <h2>Operations Control Manager – RTO, Insurance, Purchase, Breakdown, Mechanical & Civil Operations</h2>
+        <p class="hero-copy">15+ years of experience controlling multi-site infrastructure operations across RTO compliance, insurance and claims, purchase coordination, breakdown management, mechanical maintenance, civil operations, stores, ERP/SAP reporting, cost control and digital automation.</p>
+        <div class="hero-tags"><span>15+ Years</span><span>RTO Management</span><span>Insurance & Claims</span><span>Purchase Control</span><span>Breakdown Management</span><span>Mechanical & Civil Operations</span></div>
         <div class="hero-actions"><a class="btn gold" href="#expertise">Explore Expertise</a><button class="btn glass" data-action="pdf">Download CV</button></div>
       </div>
-      <div class="hero-visual reveal delay-1">
-        <div class="profile-orbit"><div class="profile-core">MKV</div><span class="orbit-item o1">ERP</span><span class="orbit-item o2">MIS</span><span class="orbit-item o3">SAP</span><span class="orbit-item o4">RTO</span><span class="orbit-item o5">P&M</span></div>
+      <div class="hero-visual reveal delay-1" aria-label="Operations control profile visual">
+        <div class="profile-card">
+          <div class="profile-photo-wrap">
+            <img class="profile-photo" src="assets/profile.jpg" alt="Manoj Kumar Vishwakarma" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+            <div class="profile-fallback">MKV</div>
+          </div>
+          <div class="profile-role">Operations Control Manager</div>
+          <div class="control-wheel">
+            <span>RTO</span><span>Insurance</span><span>Purchase</span><span>Breakdown</span><span>Mechanical</span><span>Civil</span>
+          </div>
+          <p>Multi-site control • Compliance • Cost • Reliability • Reporting</p>
+        </div>
       </div>
     </section>
 
@@ -49,7 +59,7 @@
     <section class="section stats-section">
       <div class="stats-grid">
         <article class="stat reveal"><strong data-counter="15">0</strong><span>Years Experience</span></article>
-        <article class="stat reveal delay-1"><strong data-counter="8">0</strong><span>Core Departments</span></article>
+        <article class="stat reveal delay-1"><strong data-counter="6">0</strong><span>Core Control Functions</span></article>
         <article class="stat reveal delay-2"><strong data-counter="5">0</strong><span>Project Sectors</span></article>
         <article class="stat reveal delay-3"><strong data-counter="35">0</strong><span>% Breakdown Reduction</span></article>
         <article class="stat reveal delay-4"><strong data-counter="95">0</strong><span>% Fleet Uptime</span></article>
@@ -57,8 +67,8 @@
     </section>
 
     <section class="section intro-grid">
-      <div class="section-title reveal"><p>Professional Profile</p><h2>Operations leader with digital control expertise</h2></div>
-      <div class="intro-card reveal delay-1"><p>Result-oriented professional experienced in ERP operations, SAP S/4HANA PM and ETM, Power BI dashboards, multi-site MIS, machinery and maintenance cost control, fuel monitoring, vendor billing, insurance claims, RTO documentation, store automation and project coordination.</p><p>Strong in transforming manual site processes into centralized digital workflows, validating multi-project data, producing management dashboards, controlling project budgets and supporting decision-making through reliable reports.</p></div>
+      <div class="section-title reveal"><p>Professional Profile</p><h2>Operations Control Manager with end-to-end department coordination</h2></div>
+      <div class="intro-card reveal delay-1"><p>Result-oriented Operations Control Manager experienced in RTO management, insurance and claims, purchase coordination, breakdown closure, mechanical maintenance, civil operations, ERP/SAP reporting, vendor control, cost monitoring and multi-site MIS.</p><p>Strong in connecting site, purchase, stores, finance, mechanical and civil teams through centralized workflows, clear responsibility matrices, accurate data, aging reports, cost dashboards and timely management escalation.</p></div>
     </section>
 
     <section class="section" id="expertise">
@@ -98,7 +108,7 @@
     </section>
   </main>
 
-  <footer><strong>Manoj Kumar Vishwakarma</strong><p>Operations • MIS • ERP • SAP • Infrastructure Project Controls</p></footer>
+  <footer><strong>Manoj Kumar Vishwakarma</strong><p>RTO • INSURANCE • PURCHASE • BREAKDOWN • MECHANICAL • CIVIL Project Controls</p></footer>
 
   <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
 
